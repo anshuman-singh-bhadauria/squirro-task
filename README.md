@@ -11,3 +11,7 @@ Create a web app.
 - to test the service run from another terminal
 - conda activate sq-app
 - python test.py
+
+## TODO
+- Logging
+- Enable configuration for fixed paths and names
