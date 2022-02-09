@@ -23,7 +23,10 @@ class GetDocument(Resource):
     def get(self, document_id):
         document=database.fetch(document_id)
         text_summary = text_summarizer(document)
-        return {"Document summary": text_summary}
+        return {
+            "document_id":document_id,
+            "summary": text_summary
+        }
 
 api.add_resource(SubmitDocument, "/<string:document_text>")
 api.add_resource(GetDocument, "/<int:document_id>")
