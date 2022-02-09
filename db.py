@@ -52,4 +52,4 @@ if __name__=="__main__":
     database=DB("database.db")
     content='Some text content'
     database.insert(content)
-    database.fetch(6)
+    database.fetch(1)
