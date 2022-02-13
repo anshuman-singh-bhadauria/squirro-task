@@ -15,7 +15,6 @@ class SubmitDocument(Resource):
     def post(self, document_text):
         if len(document_text)>0:
             document_id=database.insert(document_text)
-            print(document_id)
 
 class GetDocument(Resource):
 
